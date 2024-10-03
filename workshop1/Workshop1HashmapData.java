@@ -30,6 +30,7 @@ public class Workshop1HashmapData {
             } else if (!(choices.toLowerCase().equals("list")) && !(choices.toLowerCase().equals("add")) && !(choices.toLowerCase().equals("delete"))) {
                 System.out.println("Function does not exist");
             };
+            newScan.close();
             input = cons.readLine();
             
         }
