@@ -30,6 +30,7 @@ public class Workshop1ScannerMethod {
             } else if (!(choices.toLowerCase().equals("list")) && !(choices.toLowerCase().equals("add")) && !(choices.toLowerCase().equals("delete"))) {
                 System.out.println("Function does not exist");
             };
+            newScan.close();
             input = cons.readLine();
             
         }
@@ -47,8 +48,8 @@ public class Workshop1ScannerMethod {
 
     public static void addItems(String options) {
         String[] newChoice = options.trim().split(",");
+        Boolean duplicates;
         for (int i = 0; i < newChoice.length; i++) {
-            Boolean duplicates;
             duplicates = false;
             for (int k = 0; k < cart.size(); k++) {
                 if (newChoice[i].trim().equals(cart.get(k))) {

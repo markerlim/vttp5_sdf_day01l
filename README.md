@@ -29,3 +29,9 @@ FORMATTED PRINT
 %c char
 %b boolean
 %l long
+
+
+ArrayList to store words
+Keyboard inpu to be a sentence 
+scanner to break the sentence into words
+put the words into the arraylist
